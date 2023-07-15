@@ -32,6 +32,11 @@ session.exe
 ### 1. AD server
 #### [+] Tested and executed on Window Server 2012 R2
 #### [+] Turn off firewall
+#### [+] Enable File and Printer Sharing
+- Open Powershell as Administrator
+```
+Set-NetFirewallRule -DisplayGroup “File And Printer Sharing” -Enabled True -Profile Private
+```
 
 ### 2. IIS server
 #### [+] Tested and executed on Window Server 2012 R2

