@@ -13,6 +13,7 @@ This emulation plan contains several placeholder values that are meant to be rep
 |`<ip_attacker>`| IP of attacker's computer |
 |`<ip_iis`| IP of IIS Server |
 |`<name_ad>`| Name of AD Server |
+|`<webroot>`| IIS webroot location |
 
 
 ## II. Contents
