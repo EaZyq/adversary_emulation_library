@@ -93,7 +93,7 @@ exploit
 ---
 
 ### Step 3 - Target Assessment <a name="step3"></a>
-The attacker executes powershell ([T1059](https://attack.mitre.org/techniques/T1059/001/)) discovery scripts, which gather information such as device hostname, username, domain ([T1033](https://attack.mitre.org/techniques/T1033/)), CPU architecture ([T1082](https://attack.mitre.org/techniques/T1082/)), services ([T1007](https://attack.mitre.org/techniques/T1007/)), and currently running processes ([T1057](https://attack.mitre.org/techniques/T1057/)).  
+The attacker executes powershell ([TT1059.001](https://attack.mitre.org/techniques/T1059/001/)) discovery scripts, which gather information such as device hostname, username, domain ([T1033](https://attack.mitre.org/techniques/T1033/)), CPU architecture ([T1082](https://attack.mitre.org/techniques/T1082/)), services ([T1007](https://attack.mitre.org/techniques/T1007/)), and currently running processes ([T1057](https://attack.mitre.org/techniques/T1057/)).  
 After that, the attacker deletes the script ([T1070.004](https://attack.mitre.org/techniques/T1070/004/))
 
 #### 3.A - Upload scripts 
